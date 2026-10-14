@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Namrata Patil - Aspiring Software Engineer & B.Tech Information Technology Student at R. C. Patel Institute of Technology, Shirpur. Specializing in C, Java, DSA, DBMS, and Web Development.">
+  <meta name="keywords" content="Namrata Patil, Software Engineer, B.Tech IT, RCPIT, Java, C, DSA, DBMS, HTML, CSS, CyberQuant AI, SIH 2026, Midnight Universe">
+  <meta name="author" content="Namrata Patil">
+
+  <title>Namrata Patil | Aspiring Software Engineer | B.Tech IT</title>
+
+  <!-- Google Fonts: Space Grotesk, Plus Jakarta Sans, Inter, Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cinematic Animated Intro Sequence Overlay -->
+  <div class="universe-intro" id="universeIntro" role="dialog" aria-modal="true" aria-label="Universe Initialization">
+    <canvas id="introStarfieldCanvas" class="intro-starfield-canvas"></canvas>
+    <div class="intro-content">
+      <div class="intro-code-core-wrap">
+        <div class="intro-core-glow"></div>
+        <div class="intro-code-core-box">
+          <span class="core-symbol">&lt;NP /&gt;</span>
+        </div>
+        <div class="intro-code-bracket bracket-left">{</div>
+        <div class="intro-code-bracket bracket-right">}</div>
+        <div class="intro-syntax-ring ring-1"></div>
+        <div class="intro-syntax-ring ring-2"></div>
+      </div>
+      
+      <div class="intro-terminal-box">
+        <span class="intro-system-tag">SYS.CODE_WORKSPACE // v3.5</span>
+        <div class="intro-typing-wrap">
+          <span class="intro-prompt">&gt;</span>
+          <span class="intro-typing-text" id="introTypingText"></span>
+          <span class="intro-cursor"></span>
+        </div>
+        <div class="intro-status-line" id="introStatusLine">Compiling developer environment...</div>
+      </div>
+
+      <button type="button" class="btn-skip-intro" id="skipIntroBtn">
+        <span>Skip Intro</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="5 4 15 12 5 20 5 4"></polygon>
+          <line x1="19" y1="5" x2="19" y2="19"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress-bar" id="scrollProgressBar" aria-hidden="true"></div>
+
+  <!-- Soft Mouse-Following Glow Aura -->
+  <div class="mouse-glow" id="mouseGlow" aria-hidden="true"></div>
+
+  <!-- Cosmic Background Canvas (Stars, Shooting Stars, Distant Planets, Particles) -->
+  <canvas id="cosmicCanvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="header">
+    <nav class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-bracket">&lt;</span>
+        <span>Namrata.Patil</span>
+        <span class="brand-bracket">/&gt;</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="https://www.linkedin.com/in/namrata-patil-189860384/" target="_blank" rel="noopener noreferrer" class="nav-link nav-btn-linkedin" title="LinkedIn Profile">LinkedIn</a></li>
+        <li><a href="#contact" class="nav-link nav-btn-cta">Contact Terminal</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>SYS.ONLINE &bull; B.Tech IT '29 @ RCPIT Shirpur</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Namrata Patil</span>
+          </h1>
+
+          <div class="typing-container">
+            <span class="typing-prefix">&gt; role:</span>
+            <span class="typed-text" id="typedText"></span>
+            <span class="cursor">&nbsp;</span>
+          </div>
+
+          <p class="hero-description">
+            Second-year Information Technology student at <strong>R. C. Patel Institute of Technology, Shirpur</strong>. 
+            Focused on software engineering foundations with academic coursework in <strong>C, Java (OOP), Data Structures &amp; Algorithms, and DBMS</strong>, 
+            alongside active exploration in modern <strong>Web Development (HTML &amp; CSS)</strong>.
+          </p>
+
+          <div class="hero-location">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Maharashtra, India</span>
+          </div>
+
+          <div class="hero-tech-strip">
+            <span class="tech-chip">Java (OOP)</span>
+            <span class="tech-chip">C Programming</span>
+            <span class="tech-chip">Data Structures (DSA)</span>
+            <span class="tech-chip">DBMS &amp; SQL</span>
+            <span class="tech-chip">Web Development</span>
+            <span class="tech-chip tech-chip-sih">SIH '26 CyberQuant AI</span>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Projects</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                        <a href="https://www.linkedin.com/in/namrata-patil-189860384/" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin" title="Connect on LinkedIn">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+              </svg>
+              <span>LinkedIn Profile</span>
+            </a>
+            <a href="resume.pdf" class="btn btn-outline" id="resumeBtn" title="Download resume PDF">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download CV</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-photo-frame-wrap" id="profileFrameWrap">
+            <!-- Celestial Orbital Rings System -->
+            <div class="celestial-orbit-system" aria-hidden="true">
+              <div class="orbit-track track-1">
+                <div class="orbit-satellite sat-purple" title="Java & C OOP">
+                  <span>&lt;/&gt;</span>
+                </div>
+              </div>
+              <div class="orbit-track track-2">
+                <div class="orbit-satellite sat-maroon" title="SIH '26 CyberQuant AI">
+                  <span>{AI}</span>
+                </div>
+              </div>
+              <div class="orbit-track track-3">
+                <div class="orbit-satellite sat-lavender" title="DSA & DBMS Logic">
+                  <span>[DSA]</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Concentric Celestial Photo Aperture Frame -->
+            <div class="photo-aperture-frame">
+              <div class="photo-inner-container">
+                <!-- User Profile Photo -->
+                <img src="profile.jpg" alt="Namrata Patil" class="user-profile-photo" id="userProfilePhoto" onload="const el = document.getElementById('photoPlaceholderGraphic'); if(el) el.style.display='none';" onerror="this.style.display='none'; const el = document.getElementById('photoPlaceholderGraphic'); if(el) el.style.display='flex';">
+                
+                <!-- Reserved Placeholder Graphic (Fallback only) -->
+                <div class="photo-placeholder-graphic" id="photoPlaceholderGraphic" style="display: none;">
+                  <div class="monogram-celestial">
+                    <span class="monogram-letters">NP</span>
+                    <div class="monogram-pulse"></div>
+                  </div>
+                  <div class="reserved-badge">
+                    <span class="badge-dot"></span>
+                    <span>Reserved Photo Frame</span>
+                  </div>
+                  <small class="reserved-subtext">Namrata Patil &bull; B.Tech IT '29</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-top-right">
+              <span class="badge-icon">☕</span>
+              <div>
+                <strong>Java &amp; C</strong>
+                <small>OOP &amp; Logic</small>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <span class="badge-icon">🛡️</span>
+              <div>
+                <strong>SIH '26</strong>
+                <small>CyberQuant AI</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Developer Terminal HUD Window -->
+          <div class="hero-terminal-container" id="heroTerminal">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="terminal-dot dot-red"></span>
+                <span class="terminal-dot dot-yellow"></span>
+                <span class="terminal-dot dot-green"></span>
+              </div>
+              <span class="terminal-title">namrata@code-workspace:~$</span>
+              <span class="terminal-status">LIVE // B.Tech IT '29</span>
+            </div>
+            <div class="terminal-body" id="terminalOutput">
+              <div class="terminal-line"><span class="terminal-prompt">$</span> universe.init --user "Namrata Patil"</div>
+              <div class="terminal-line terminal-out">Code Workspace initialized. Stack: Java, C, DSA, DBMS, SQL.</div>
+              <div class="terminal-line"><span class="terminal-prompt">$</span> ./run-diagnostics</div>
+              <div class="terminal-line terminal-out-highlight">&#10003; SIH 2026 CyberQuant AI: Platform Proposal Active</div>
+              <div class="terminal-line terminal-out-highlight">&#10003; Website Broken Link &amp; SEO Health Audit: Ready</div>
+              <div class="terminal-line terminal-out">&#9656; Type 'help', 'skills', or 'projects' below:</div>
+            </div>
+            <form class="terminal-input-row" id="terminalForm" autocomplete="off">
+              <span class="terminal-prompt" style="padding-left: 0.9rem;">$</span>
+              <input type="text" class="terminal-input" id="terminalInput" placeholder="try 'help'..." aria-label="Terminal input command">
+            </form>
+            <div class="terminal-shortcuts" aria-label="Terminal command shortcuts">
+              <button type="button" class="term-shortcut" data-cmd="whoami">whoami</button>
+              <button type="button" class="term-shortcut" data-cmd="skills">skills</button>
+              <button type="button" class="term-shortcut" data-cmd="projects">projects</button>
+              <button type="button" class="term-shortcut" data-cmd="education">education</button>
+              <button type="button" class="term-shortcut" data-cmd="contact">contact</button>
+              <button type="button" class="term-shortcut" data-cmd="quote">quote</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider-glow" aria-hidden="true">
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">01 // Dossier Profile</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card narrative-card reveal-on-scroll">
+            <div class="dossier-identity-strip">
+              <div class="dossier-avatar">
+                <img src="profile.jpg" alt="Namrata Patil" class="dossier-img">
+              </div>
+              <div class="dossier-meta">
+                <div class="dossier-badge-row">
+                  <span class="verified-dot"></span>
+                  <strong>Namrata Patil</strong>
+                  <span class="dossier-status-pill">Active Student @ RCPIT</span>
+                  <a href="https://www.linkedin.com/in/namrata-patil-189860384/" target="_blank" rel="noopener noreferrer" class="dossier-linkedin-pill" title="Connect with Namrata on LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                    <span>LinkedIn</span>
+                  </a>
+                </div>
+                <p class="dossier-dept">B.Tech Information Technology &bull; Class of 2029</p>
+              </div>
+            </div>
+
+            <h3 class="card-heading">
+              <span class="code-comment">// Academic &amp; Engineering Trajectory</span>
+              Building resilient software systems on proven CS foundations
+            </h3>
+            <p>
+              I am <strong>Namrata Himmat Patil</strong>, an aspiring software engineer pursuing my 
+              <strong>Bachelor of Technology (B.Tech) in Information Technology</strong> at 
+              <em>R. C. Patel Institute of Technology (RCPIT), Shirpur</em> (Expected Graduation: 2029).
+            </p>
+            <p>
+              My coding journey started with <strong>C programming</strong>, building a strong mental model for memory, 
+              pointers, and low-level execution logic. I expanded into object-oriented engineering with <strong>Java</strong>, 
+              focusing on encapsulation, inheritance, polymorphism, and abstraction.
+            </p>
+            <p>
+              I am currently refining my algorithmic efficiency through <strong>Data Structures and Algorithms (DSA)</strong> 
+              and mastering relational architecture with <strong>DBMS &amp; SQL</strong>. Concurrently, I am exploring 
+              <strong>Web Development (HTML5, CSS3, JavaScript)</strong> to turn concepts into fast, responsive digital tools.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <span class="highlight-number">2nd</span>
+                <span class="highlight-label">Year B.Tech IT</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-number">2029</span>
+                <span class="highlight-label">Graduation Year</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-number">SIH</span>
+                <span class="highlight-label">2026 Hackathon Team</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-cards-column">
+            <div class="feature-box reveal-on-scroll">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4>Academic Rigor</h4>
+                <p>Systematic coursework in Object-Oriented Programming, Data Structures, Relational Database Management Systems, and Operating Systems.</p>
+              </div>
+            </div>
+
+            <div class="feature-box reveal-on-scroll">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div>
+                <h4>Competitive Track Record</h4>
+                <p>Represented a technical project at the national competition level in 2023, and actively collaborating on CyberQuant AI for Smart India Hackathon 2026.</p>
+              </div>
+            </div>
+
+            <div class="feature-box reveal-on-scroll">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div>
+                <h4>Community &amp; Leadership</h4>
+                <p>NSS (National Service Scheme) volunteer at RCPIT, participating in community drives including blood donation camps and tree plantation campaigns.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider-glow" aria-hidden="true">
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">02 // Technical Capabilities</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <p class="section-subtitle">
+          An authentic engineering profile distinguishing completed coursework and core curriculum from actively explored technologies.
+        </p>
+
+        <div class="skills-grid">
+          <!-- 1. Core Programming Languages -->
+          <div class="skill-category-card reveal-on-scroll">
+            <div class="category-header">
+              <div class="cat-icon-wrap cat-code">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3>Programming Languages</h3>
+                <span class="cat-meta">Completed Academic Coursework</span>
+              </div>
+            </div>
+
+            <div class="skills-pill-list">
+              <div class="skill-pill">
+                <div class="skill-name">
+                  <strong>C Language</strong>
+                  <span class="level-badge learned">Coursework Complete</span>
+                </div>
+                <div class="skill-meter-wrap"><div class="skill-meter-bar" style="--level: 88%;"></div></div>
+                <p class="skill-detail">Procedural fundamentals, pointers, manual memory allocation, data arrays, and foundational algorithmic problem-solving.</p>
+              </div>
+
+              <div class="skill-pill">
+                <div class="skill-name">
+                  <strong>Java (OOP)</strong>
+                  <span class="level-badge learned">Coursework Complete</span>
+                </div>
+                <div class="skill-meter-wrap"><div class="skill-meter-bar" style="--level: 85%;"></div></div>
+                <p class="skill-detail">Object-Oriented Programming: Classes, Encapsulation, Inheritance, Polymorphism, and Abstraction.</p>
+              </div>
+
+              <div class="skill-pill">
+                <div class="skill-name">
+                  <strong>SQL</strong>
+                  <span class="level-badge learning">Currently Learning</span>
+                </div>
+                <div class="skill-meter-wrap"><div class="skill-meter-bar" style="--level: 65%;"></div></div>
+                <p class="skill-detail">Relational querying, SELECT statements, table joins, schema definitions, and integrity constraints.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Core CS Fundamentals -->
+          <div class="skill-category-card reveal-on-scroll">
+            <div class="category-header">
+              <div class="cat-icon-wrap cat-theory">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div>
+                <h3>Core Computer Science</h3>
+                <span class="cat-meta">Academic Curriculum &amp; Foundations</span>
+              </div>
+            </div>
+
+            <div class="skills-pill-list">
+              <div class="skill-pill">
+                <div class="skill-name">
+                  <strong>Data Structures &amp; Algorithms (DSA)</strong>
+                  <span class="level-badge core">Core Subject</span>
+                </div>
+                <div class="skill-meter-wrap"><div class="skill-meter-bar" style="--level: 82%;"></div></div>
+                <p class="skill-detail">Linear structures (arrays, linked lists, stacks, queues), sorting algorithms, searching, and complexity analysis in C.</p>
+              </div>
+
+              <div class="skill-pill">
+                <div class="skill-name">
+                  <strong>Database Management Systems (DBMS)</strong>
+                  <span class="level-badge core">Core Subject</span>
+                </div>
+                <div class="skill-meter-wrap"><div class="skill-meter-bar" style="--level: 80%;"></div></div>
+                <p class="skill-detail">Relational data models, ER diagrams, schema normalization (1NF, 2NF, 3NF), transactions, and ACID principles.</p>
+              </div>
+
+              <div class="skill-pill">
+                <div class="skill-name">
+                  <strong>Operating Systems &amp; IT Infrastructure</strong>
+                  <span class="level-badge core">Core Subject</span>
+                </div>
+                <div class="skill-meter-wrap"><div class="skill-meter-bar" style="--level: 76%;"></div></div>
+                <p class="skill-detail">Process management, CPU scheduling concepts, memory hierarchy, system fundamentals, and IT infrastructure.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Web Development -->
+          <div class="skill-category-card reveal-on-scroll">
+            <div class="category-header">
+              <div class="cat-icon-wrap cat-web">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3>Web Development</h3>
+                <span class="cat-meta">Actively Exploring &amp; Practicing</span>
+              </div>
+            </div>
+
+            <div class="skills-pill-list">
+              <div class="skill-pill">
+                <div class="skill-name">
+                  <strong>HTML (HTML5)</strong>
+                  <span class="level-badge learning">Currently Exploring</span>
+                </div>
+                <div class="skill-meter-wrap"><div class="skill-meter-bar" style="--level: 72%;"></div></div>
+                <p class="skill-detail">Semantic page structure, modern markup, form elements, document hierarchy, and accessible web standards.</p>
+              </div>
+
+              <div class="skill-pill">
+                <div class="skill-name">
+                  <strong>CSS (CSS3)</strong>
+                  <span class="level-badge learning">Currently Exploring</span>
+                </div>
+                <div class="skill-meter-wrap"><div class="skill-meter-bar" style="--level: 70%;"></div></div>
+                <p class="skill-detail">Responsive layouts, Flexbox, CSS Grid, media queries, CSS variables, glassmorphism, and modern UI styling.</p>
+              </div>
+
+              <div class="skill-pill">
+                <div class="skill-name">
+                  <strong>JavaScript (Vanilla JS)</strong>
+                  <span class="level-badge learning">Currently Exploring</span>
+                </div>
+                <div class="skill-meter-wrap"><div class="skill-meter-bar" style="--level: 60%;"></div></div>
+                <p class="skill-detail">DOM manipulation, event listeners, dynamic behaviors, and client-side form validation.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Tools & Environments -->
+          <div class="skill-category-card reveal-on-scroll">
+            <div class="category-header">
+              <div class="cat-icon-wrap cat-tools">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3>Tools &amp; Environments</h3>
+                <span class="cat-meta">Developer Workflow &amp; Tooling</span>
+              </div>
+            </div>
+
+            <div class="tools-grid">
+              <div class="tool-item">
+                <span class="tool-dot"></span>
+                <span>Visual Studio Code (Primary Code Editor)</span>
+              </div>
+              <div class="tool-item">
+                <span class="tool-dot"></span>
+                <span>Git &amp; GitHub (Version Control - Exploring)</span>
+              </div>
+              <div class="tool-item">
+                <span class="tool-dot"></span>
+                <span>Antigravity IDE (Agentic Coding &amp; Prototyping)</span>
+              </div>
+              <div class="tool-item">
+                <span class="tool-dot"></span>
+                <span>Overleaf / LaTeX (Technical Documentation)</span>
+              </div>
+              <div class="tool-item">
+                <span class="tool-dot"></span>
+                <span>Replit (Cloud-based Coding &amp; Testing)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider-glow" aria-hidden="true">
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">03 // Blueprint Showcase</span>
+          <h2 class="section-title">Projects &amp; Initiatives</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-controls" role="tablist" aria-label="Project category filters">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Initiatives</button>
+          <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web &amp; Auditing</button>
+          <button class="filter-btn" data-filter="cyber" role="tab" aria-selected="false">Cybersecurity &amp; AI</button>
+          <button class="filter-btn" data-filter="competitions" role="tab" aria-selected="false">National Competitions</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project 1: SEO & Broken Link Audit Tool -->
+          <article class="project-card reveal-on-scroll" data-category="web">
+            <div class="project-header">
+              <div class="project-type-tag">Web &amp; Tooling Project</div>
+              <span class="project-badge status-planning">Design &amp; Exploration</span>
+            </div>
+
+            <h3 class="project-title">Website Broken Link &amp; SEO Health Audit Tool</h3>
+
+            <p class="project-description">
+              A website diagnostic auditing project designed to crawl web pages from a target URL, 
+              detect broken hyperlinks (404 status codes &amp; faulty redirects), evaluate essential on-page SEO factors, 
+              and organize audit outcomes into a structured diagnostic report with actionable recommendations.
+            </p>
+
+            <div class="project-tags">
+              <span class="tag">Web Crawling</span>
+              <span class="tag">Link Validation</span>
+              <span class="tag">SEO Health</span>
+              <span class="tag">Diagnostic Reports</span>
+            </div>
+
+            <div class="project-footer">
+              <div class="project-status-note">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="tiny-icon">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+                <span>Architecture and crawler pipeline in active design</span>
+              </div>
+              <div class="project-links">
+                <button class="btn-project-action btn-project-details" data-project="seo-tool">
+                  <span>Inspect Specs</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+                <button class="btn-project-action btn-project-repo" data-action="repo-notice">
+                  <span>GitHub</span>
+                  <span class="badge-pill">In Progress</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: CyberQuant AI -->
+          <article class="project-card featured-project reveal-on-scroll" data-category="cyber">
+            <div class="project-header">
+              <div class="project-type-tag">Smart India Hackathon 2026</div>
+              <span class="project-badge status-hackathon">SIH '26 Platform</span>
+            </div>
+
+            <h3 class="project-title">CyberQuant AI — Cyber Risk Quantification &amp; Investment Optimization</h3>
+
+            <p class="project-description">
+              A collaborative cybersecurity platform conceptualized for Smart India Hackathon 2026. 
+              The proposed platform focuses on translating technical vulnerabilities into quantifiable financial risk metrics 
+              to empower security leaders to prioritize defenses and optimize capital allocation effectively.
+            </p>
+
+            <div class="concept-breakdown">
+              <span class="breakdown-label">Project Concepts Explored:</span>
+              <div class="project-tags">
+                <span class="tag">FAIR Model</span>
+                <span class="tag">CVSS &amp; EPSS</span>
+                <span class="tag">CISA KEV</span>
+                <span class="tag">Attack Graphs</span>
+                <span class="tag">Monte Carlo</span>
+                <span class="tag">SHAP (Explainable AI)</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <div class="project-status-note">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="tiny-icon">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <span>Collaborative proposal &amp; analytical model for SIH 2026</span>
+              </div>
+              <div class="project-links">
+                <button class="btn-project-action btn-project-details" data-project="cyberquant">
+                  <span>Inspect Specs</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+                <button class="btn-project-action btn-project-repo" data-action="hackathon-notice">
+                  <span>Overview</span>
+                  <span class="badge-pill">SIH 2026</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: National Level Project -->
+          <article class="project-card reveal-on-scroll" data-category="competitions">
+            <div class="project-header">
+              <div class="project-type-tag">National Technical Event</div>
+              <span class="project-badge status-award">National Level 2023</span>
+            </div>
+
+            <h3 class="project-title">National-Level Technical Project Presentation</h3>
+
+            <p class="project-description">
+              Represented a technical project at the national competition level in 2023. Participated in technical 
+              workshops, demonstrated key project objectives before academic review panels, and earned certificates of achievement.
+            </p>
+
+            <div class="project-tags">
+              <span class="tag">National Competition</span>
+              <span class="tag">Project Presentation</span>
+              <span class="tag">Technical Innovation</span>
+              <span class="tag">Merit Recognition</span>
+            </div>
+
+            <div class="project-footer">
+              <div class="project-status-note">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="tiny-icon">
+                  <circle cx="12" cy="8" r="7"></circle>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                </svg>
+                <span>Demonstrated at national level with certificate of merit</span>
+              </div>
+              <div class="project-links">
+                <button class="btn-project-action btn-project-details" data-project="national-project">
+                  <span>Inspect Specs</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+                <button class="btn-project-action btn-project-repo" data-action="certificate-notice">
+                  <span>Certificate</span>
+                  <span class="badge-pill">Verified</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider-glow" aria-hidden="true">
+
+    <!-- EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">04 // Academic Timeline</span>
+          <h2 class="section-title">Education</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card reveal-on-scroll">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">Bachelor of Technology (B.Tech) — Information Technology</h3>
+                  <h4 class="timeline-institution">R. C. Patel Institute of Technology (RCPIT), Shirpur</h4>
+                </div>
+                <div class="timeline-badge">2025 &ndash; 2029 (Expected)</div>
+              </div>
+              <p class="timeline-sub">Currently in <strong>Second Year</strong></p>
+              <p class="timeline-desc">
+                Curriculum focused on software engineering foundations, algorithmic efficiency, systems programming, 
+                database architecture, and information technology infrastructure. Active participant in technical clubs and campus development initiatives.
+              </p>
+              <div class="coursework-chips">
+                <span class="chip-title">Key Coursework:</span>
+                <span class="chip">C Programming</span>
+                <span class="chip">Java &amp; OOP</span>
+                <span class="chip">Data Structures &amp; Algorithms</span>
+                <span class="chip">DBMS</span>
+                <span class="chip">Operating Systems</span>
+                <span class="chip">IT Infrastructure</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider-glow" aria-hidden="true">
+
+    <!-- ACHIEVEMENTS & CERTIFICATIONS SECTION -->
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">05 // Milestone Log</span>
+          <h2 class="section-title">Certifications &amp; Achievements</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="achievements-grid">
+          <!-- Card 1 -->
+          <div class="achievement-card reveal-on-scroll">
+            <div class="achieve-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <h4>Smart India Hackathon 2026</h4>
+            <p class="achieve-meta">National Hackathon Participant</p>
+            <p class="achieve-text">
+              Collaborating on CyberQuant AI, a platform addressing cyber risk quantification and optimization for organizational defense strategies.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="achievement-card reveal-on-scroll">
+            <div class="achieve-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </div>
+            <h4>National-Level Project Entry (2023)</h4>
+            <p class="achieve-meta">Technical Competition Recognition</p>
+            <p class="achieve-text">
+              Presented an innovative technical project at the national competition level, earning certificates of merit and technical presentation experience.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="achievement-card reveal-on-scroll">
+            <div class="achieve-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <h4>DSA Using C Coursework</h4>
+            <p class="achieve-meta">Intensive Course Completion</p>
+            <p class="achieve-text">
+              Completed structured coursework in Data Structures &amp; Algorithms using C, covering linear and non-linear data structures, searching, sorting, and complexity.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="achievement-card reveal-on-scroll">
+            <div class="achieve-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <h4>First-Year Programming Foundations</h4>
+            <p class="achieve-meta">RCPIT Academic Curriculum</p>
+            <p class="achieve-text">
+              Successfully completed comprehensive first-year curriculum in procedural C programming and Java Object-Oriented Programming (OOP) with laboratory assessments.
+            </p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="achievement-card reveal-on-scroll">
+            <div class="achieve-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </div>
+            <h4>NSS Social Initiatives at RCPIT</h4>
+            <p class="achieve-meta">National Service Scheme</p>
+            <p class="achieve-text">
+              Contributed to campus and community initiatives through NSS RCPIT, including blood donation camps and campus tree plantation campaigns.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider-glow" aria-hidden="true">
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">06 // Communication Node</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Info & Profiles -->
+          <div class="contact-info-panel reveal-on-scroll">
+            <h3>Let's connect &amp; collaborate</h3>
+            <p>
+              I am open to learning opportunities, technical guidance, and collaborating on student projects. 
+              Feel free to reach out via email or connect with me on LinkedIn and GitHub.
+            </p>
+
+            <div class="contact-cards">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <span class="contact-label">Email Node</span>
+                  <a href="mailto:patilnamrata.student@gmail.com" class="contact-value" id="emailDisplay">
+                    patilnamrata.student@gmail.com
+                  </a>
+                  <div class="contact-actions">
+                    <button type="button" class="btn-mini" id="copyEmailBtn">Copy Email</button>
+                    <a href="mailto:patilnamrata.student@gmail.com" class="btn-mini">Open Mail Client</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <span class="contact-label">Location Coordinates</span>
+                  <span class="contact-value">Maharashtra, India</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                  </svg>
+                </div>
+                <div>
+                  <span class="contact-label">College &amp; Department</span>
+                  <span class="contact-value">R. C. Patel Institute of Technology (RCPIT), Shirpur</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links-block">
+              <span class="social-header-label">Professional Networks:</span>
+              <div class="social-buttons">
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/namrata-patil-189860384/" target="_blank" rel="noopener noreferrer" class="social-btn" id="linkedinLink" title="Visit LinkedIn Profile">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-btn" id="githubLink" title="Visit GitHub Profile">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+
+              <div class="social-tip">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+                  <strong style="color: var(--blue-electric); font-family: var(--font-mono);">Suggested LinkedIn Headline:</strong>
+                  <button type="button" class="btn-mini" id="copyHeadlineBtn" style="padding: 0.2rem 0.5rem;">Copy</button>
+                </div>
+                <code id="headlineText">RCPIT IT '29 | Aspiring Software Engineer | C | Java | DSA | DBMS | Web Development</code>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Terminal Contact Form -->
+          <div class="contact-form-panel reveal-on-scroll">
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="senderName">Your Name <span class="required">*</span></label>
+                <input type="text" id="senderName" name="name" placeholder="e.g. Alex Mercer" required autocomplete="name">
+                <span class="field-error" id="nameError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="senderEmail">Your Email <span class="required">*</span></label>
+                <input type="email" id="senderEmail" name="email" placeholder="e.g. alex@example.com" required autocomplete="email">
+                <span class="field-error" id="emailError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="messageSubject">Subject <span class="required">*</span></label>
+                <input type="text" id="messageSubject" name="subject" placeholder="Project Collaboration / Mentorship / Query" required>
+                <span class="field-error" id="subjectError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="messageBody">Message <span class="required">*</span></label>
+                <textarea id="messageBody" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                <span class="field-error" id="messageError"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                <span>Transmit Message</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div class="form-feedback" id="formFeedback" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <p class="footer-brand">&lt;Namrata.Patil /&gt;</p>
+        <p class="footer-text">
+          Designed with semantic HTML5, cybernetic CSS3 &amp; vanilla JavaScript. Built for speed, visual depth, and recruiter appeal in the Midnight Universe.
+        </p>
+      </div>
+      <div class="footer-right">
+        <p class="copyright">&copy; 2026 Namrata Patil. All rights reserved.</p>
+        <div class="footer-actions">
+          <button type="button" class="btn-replay-intro" id="replayIntroBtn" title="Replay Midnight Universe Intro Sequence">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="1 4 1 10 7 10"></polyline>
+              <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+            </svg>
+            <span>Replay Universe Intro</span>
+          </button>
+          <a href="#hero" class="back-to-top" aria-label="Scroll back to top">
+            <span>Back to top [^]</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Motivational Quotes HUD -->
+  <div class="floating-quote-hud" id="floatingQuoteHud" aria-live="polite">
+    <div class="quote-orb">
+      <span class="quote-orb-core"></span>
+    </div>
+    <div class="quote-content">
+      <p class="quote-text" id="quoteText">“The cosmos is within us. We are made of star-stuff.”</p>
+      <span class="quote-author" id="quoteAuthor">— Carl Sagan</span>
+    </div>
+    <button type="button" class="quote-close-btn" id="quoteCloseBtn" aria-label="Dismiss quote">&times;</button>
+  </div>
+
+  <!-- Project Details Modal (Interactive Pop-up) -->
+  <div class="modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">&times;</button>
+      <span class="modal-tag" id="modalCategory">Category</span>
+      <h3 class="modal-title" id="modalTitle">Project Title</h3>
+      <div class="modal-body" id="modalBody">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Modal -->
+  <div class="toast" id="toastNotification" role="status" aria-live="polite">
+    <div class="toast-body" id="toastMessage"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
